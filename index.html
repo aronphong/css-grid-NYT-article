@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Space Ripples Reavel Big Bang's Smoking Gun</title>
 </head>
 <body>
@@ -17,12 +18,13 @@
     
         <div class="social">
             <date>March 17, 2014</date>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button class="fa fa-facebook"></button>
+            <button class="fa fa-twitter"></button>
+            <button class="fa fa-envelope"></button>
+            <button class="fa fa-share"></button>
+            <!-- <i class="fa fa-bookmark-o"></i> -->
+            <button class="fa fa-bookmark-o"></button>
+            <button class="fa fa-comment-o"></button>
         </div>
 
         <p>CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.</p>
@@ -69,6 +71,7 @@
         <p>Andrei Linde of Stanford, a prolific theorist who first described the most popular variant of inflation, known as chaotic inflation, in 1983, was about to go on vacation in the Caribbean last week when Chao-Lin Kuo, a Stanford colleague and a member of Dr. Kovac’s team, knocked on his door with a bottle of Champagne to tell him the news.</p>
 
         <iframe width="550" height="336" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption>Stanford Professor Andrei Linde celebrates physics breakthrough - Video by StanfordUniversity</figcaption>
         <!-- <caption>Professor Andrei Linde celebrates physics breakthrough</caption> -->
         <!-- <caption>Video by StanfordUniversity</caption> -->
 
@@ -98,7 +101,7 @@
 
         <figure>
             <img src="images/telescope.jpg" alt="The Bicep2 telescope, in the foreground">
-            <figure>The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.Steffen Richter/Associated Press</figure>
+            <figcaption>The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature of a universe being wrenched violently apart at its birth.Steffen Richter/Associated Press</figure>
         </figure>
 
         <p>In 2002, he was part of a team that discovered that the microwave radiation was polarized, meaning the light waves had a slight preference to vibrate in one direction rather than another.</p>
@@ -150,7 +153,7 @@
         }
 
         p {
-            line-height: 1.8;
+            line-height: 1.5;
         }
 
         img {
@@ -159,7 +162,7 @@
 
         h1,
         h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 3rem;
         font-style: italic;
         font-weight: 700;
@@ -183,6 +186,32 @@
             margin: 0;
             grid-column: 1 / -1;
         }
+
+        figcaption {
+            font-size: 0.8em;
+            line-height: 1.25rem;
+            color: #666;
+        }
+
+        .social {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-flow: column;
+            grid-gap: 10px;
+        }
+        .social > button {
+            border-radius: 100%;
+            border: 1px #eee solid;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .social > button:hover {
+            background-color: white;
+        }
+
     </style>
 </body>
 </html>
